@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  // box-sizing: border-box;
+}
+
+.text-primary {
+  color: $primary-color;
+}
+
+.text-blue {
+  color: $blue-color;
+}
+
+.hover-primary:hover {
+  color: $primary-color;
+}
+
+.form {
+  max-width: 30rem;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.large_form {
+  @extend .form;
+  max-width: 100%;
+}
+
+@include xs {
+  .form {
+    max-width: 90%;
+  }
+}
+
+.ant-btn-primary {
+  background-color: #1890ff !important;
+}
+
+.ant-switch {
+  background-color: rgba(0, 0, 0, 0.25) !important;
+}
+
+.ant-switch-checked {
+  background-color: #1890ff !important;
+}
+
+.box_wrapper {
+  border: 1px solid gray;
+  padding: 1rem;
+  border-radius: 0.5em;
+  width: 30rem;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @include xs {
+    width: 90% !important;
+  }
+}
+.ant-image-preview-img {
+  display: inline !important;
+}
