@@ -1,0 +1,47 @@
+.header {
+  background: $linear-gradient-main;
+
+  .ant-collapse-header {
+    background: $primary-color !important;
+  }
+
+  .item--active {
+    a {
+      color: $primary-color;
+    }
+  }
+
+  .header__container {
+    max-width: $screen-lg-min;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .item {
+      position: relative;
+
+      &:hover {
+        color: white !important;
+      }
+
+      &--active {
+        @extend .item;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0%;
+        height: 2px;
+        background: white;
+        transition: 0.3s;
+      }
+
+      &:hover:after {
+        width: 100%;
+      }
+    }
+  }
+}
