@@ -1,0 +1,22 @@
+.why_us {
+  .box__wrapper {
+    position: relative;
+    .item {
+      border: 1px solid $primary-color;
+      flex-basis: 30rem;
+    }
+  }
+}
+
+@include md-down {
+  .why_us {
+    .box__wrapper {
+      .item {
+        width: 80%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}

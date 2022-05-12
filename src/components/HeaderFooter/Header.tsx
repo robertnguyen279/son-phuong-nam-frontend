@@ -34,7 +34,7 @@ const Header = (): React.ReactElement => {
     <div className="small flex items-center justify-center h-full flex-col">
       {renderLogo()}
       <div className="pb-5 w-10/12">
-        <Collapse>
+        <Collapse destroyInactivePanel={true}>
           <Panel header={collapseHeader()} key="1" showArrow={false}>
             <div className={`item${currentActive === '/' ? '--active' : ''} w-full text-center py-3`}>
               <Link to="/" onClick={() => setCurrentActive('/')} className="cursor-pointer">
