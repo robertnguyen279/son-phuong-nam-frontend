@@ -6,11 +6,15 @@
 }
 
 html {
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 .text-primary {
   color: $primary-color;
+}
+
+.text-secondary {
+  color: $secondary-color;
 }
 
 .text-blue {

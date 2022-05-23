@@ -1,0 +1,21 @@
+.card_wrapper {
+  flex-basis: 27%;
+  box-shadow: 1px 1px 5px 1px $shadow-color;
+  border-radius: 0.5em;
+  position: relative;
+  min-height: 20rem;
+
+  .sale_tag {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: $primary-color;
+    border-radius: 0.5em;
+  }
+}
+
+@include md-down {
+  .card_wrapper {
+    flex-basis: 40%;
+  }
+}

@@ -1,0 +1,18 @@
+.services_wrapper {
+  .item {
+    flex-basis: 45%;
+    box-shadow: 1px 1px 5px 1px $shadow-color;
+    border-radius: 0.25em;
+  }
+}
+
+@include md-down {
+  .services_wrapper {
+    .item {
+      flex-basis: 80%;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
