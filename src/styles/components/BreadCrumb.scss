@@ -1,0 +1,46 @@
+.breadcrumb {
+  position: relative;
+  height: 20rem;
+  overflow: hidden;
+
+  .image {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .blur {
+    background: rgba(0, 0, 0, 0.91);
+    box-shadow: none;
+    opacity: 0.7;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  .text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+}
+
+@include md-down {
+  .breadcrumb {
+    height: 15rem;
+  }
+}
+
+@include xs {
+  .breadcrumb {
+    height: 10rem;
+  }
+}

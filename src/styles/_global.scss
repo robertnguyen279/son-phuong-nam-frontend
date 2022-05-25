@@ -5,7 +5,8 @@
   font-family: $primary-font;
 }
 
-html {
+html,
+body {
   min-height: 100%;
 }
 
@@ -70,4 +71,12 @@ html {
 }
 .ant-image-preview-img {
   display: inline !important;
+}
+
+.page_container {
+  max-width: $screen-lg-min;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 2rem;
 }

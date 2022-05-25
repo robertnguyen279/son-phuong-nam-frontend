@@ -19,3 +19,8 @@ export interface IBlogWrapper {
 export interface IBlogCard {
   post: Post;
 }
+
+export interface IBreadCrumb {
+  text: string;
+  picture: string;
+}
