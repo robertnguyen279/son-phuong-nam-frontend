@@ -3,6 +3,7 @@ import Carousel from './Carousel';
 import WhyUs from './WhyUs';
 import Services from 'components/Services';
 import Products from './Products';
+import Blogs from './Blogs';
 
 const Home = (): React.ReactElement => {
   return (
@@ -12,6 +13,7 @@ const Home = (): React.ReactElement => {
         <Services />
         <WhyUs />
         <Products />
+        <Blogs />
       </div>
     </div>
   );

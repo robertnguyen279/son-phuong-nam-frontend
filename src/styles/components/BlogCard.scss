@@ -1,0 +1,40 @@
+.blog_card {
+  flex-basis: 80%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 1px 1px 5px 1px $shadow-color;
+  border-radius: 0.5em;
+  min-height: 20rem;
+
+  img {
+    width: 100%;
+    transition: 0.3s;
+  }
+
+  img:hover {
+    transform: scale(1.5);
+  }
+}
+
+@include md-down {
+  .blog_card {
+    position: static;
+    flex-basis: 40%;
+    transform: translateX(0%);
+  }
+}
+
+@include md-up {
+  .blog_card {
+    position: static;
+    flex-basis: 27%;
+    transform: translateX(0%);
+  }
+}
+
+@include xs {
+  .blog_card {
+    flex-basis: 80%;
+  }
+}

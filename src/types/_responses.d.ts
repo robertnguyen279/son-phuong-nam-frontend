@@ -10,3 +10,13 @@ export interface Product {
     name: string;
   };
 }
+
+export interface Post {
+  _id: string;
+  title: string;
+  urlString: string;
+  postBy: string;
+  picture: string;
+  content: string;
+  createdAt: string;
+}

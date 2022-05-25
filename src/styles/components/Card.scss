@@ -19,3 +19,9 @@
     flex-basis: 40%;
   }
 }
+
+@include xs {
+  .card_wrapper {
+    flex-basis: 80%;
+  }
+}
