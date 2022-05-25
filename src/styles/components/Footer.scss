@@ -1,0 +1,19 @@
+.footer {
+  background: $linear-gradient-main;
+  min-height: 7rem;
+  position: relative;
+
+  .footer__container {
+    max-width: $screen-lg-min;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+  }
+}
+
+@include xs {
+  .footer {
+    height: 12rem;
+  }
+}
