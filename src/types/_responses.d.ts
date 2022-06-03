@@ -20,3 +20,10 @@ export interface Post {
   content: string;
   createdAt: string;
 }
+
+export interface SiteInfo {
+  phone: number;
+  taxCode: number;
+  address: string;
+  email: string;
+}

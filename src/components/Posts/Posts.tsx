@@ -1,6 +1,6 @@
 import React from 'react';
 import BreadCrumb from 'components/BreadCrumb';
-import ProductImage from 'assets/images/san-pham.jpg';
+import PostImage from 'assets/images/bai-viet.jpg';
 import { Pagination, message, Skeleton } from 'antd';
 import axios from 'services/axios.service';
 import BlogWrapper from 'components/BlogWrapper';
@@ -29,7 +29,7 @@ const Posts = (): React.ReactElement => {
 
   return (
     <div className="post">
-      <BreadCrumb picture={ProductImage} text="Sản phẩm" />
+      <BreadCrumb picture={PostImage} text="Bài viết" />
       <div className="page_container">
         {posts ? (
           <div className="post_wrapper my-10">

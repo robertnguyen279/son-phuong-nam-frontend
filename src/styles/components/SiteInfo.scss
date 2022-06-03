@@ -1,0 +1,15 @@
+.contact_page {
+  .site_info {
+    .info_wrapper {
+      max-width: 30rem;
+      width: 100%;
+      border: 1px solid $primary-color;
+      border-radius: 0.5em;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      min-height: 10rem;
+      padding: 1rem;
+    }
+  }
+}
