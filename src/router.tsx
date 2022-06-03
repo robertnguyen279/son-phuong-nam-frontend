@@ -7,6 +7,7 @@ import Products from 'components/Products';
 import Product from 'components/Product';
 import Posts from 'components/Posts';
 import ContactPage from 'components/ContactPage';
+import Post from 'components/Post';
 
 const HomePage = lazy(() => import('components/Home'));
 
@@ -19,6 +20,7 @@ export default (
         <Route exact path="/san-pham" component={Products} />
         <Route exact path="/san-pham/:urlString" component={Product} />
         <Route exact path="/bai-viet" component={Posts} />
+        <Route exact path="/bai-viet/:urlString" component={Post} />
         <Route exact path="/lien-he" component={ContactPage} />
       </Switch>
     </HeaderFooter>

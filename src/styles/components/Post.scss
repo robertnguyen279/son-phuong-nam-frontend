@@ -1,0 +1,29 @@
+.post {
+  .post_wrapper {
+    .time {
+      padding: 0.5em 1em;
+      background-color: $primary-color;
+      color: white;
+      border-radius: 0.25em;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    hr {
+      border: none;
+      height: 1px;
+      /* Set the hr color */
+      color: #333; /* old IE */
+      background-color: $shadow-color; /* Modern Browsers */
+    }
+
+    .content {
+      img {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}

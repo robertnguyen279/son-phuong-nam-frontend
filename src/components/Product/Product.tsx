@@ -35,7 +35,7 @@ const Product = (): React.ReactElement => {
             <Skeleton />
           ) : (
             <div className="product">
-              <div className="title text-xl text-center font-bold">{product.name}</div>
+              <div className="title text-xl text-center font-bold text-secondary">{product.name}</div>
               <div className="product_body_wrapper flex md:flex-row flex-col my-5 justify-between">
                 <div className="image_container md:mr-5 my-5 md:my-0">
                   <div className="image">
