@@ -4,6 +4,7 @@ import LoadingScreen from 'components/LoadingScreen';
 import HeaderFooter from 'components/HeaderFooter';
 import AboutUs from 'components/AboutUs';
 import Products from 'components/Products';
+import Product from 'components/Product';
 import Posts from 'components/Posts';
 import ContactPage from 'components/ContactPage';
 
@@ -16,6 +17,7 @@ export default (
         <Route exact path="/" component={HomePage} />
         <Route exact path="/gioi-thieu" component={AboutUs} />
         <Route exact path="/san-pham" component={Products} />
+        <Route exact path="/san-pham/:urlString" component={Product} />
         <Route exact path="/bai-viet" component={Posts} />
         <Route exact path="/lien-he" component={ContactPage} />
       </Switch>
