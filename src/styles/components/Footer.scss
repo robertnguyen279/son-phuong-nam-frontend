@@ -10,6 +10,12 @@
     transform: translateX(-50%);
     height: 100%;
   }
+
+  .call_to_action {
+    position: fixed;
+    bottom: 10%;
+    left: 5%;
+  }
 }
 
 @include xs {

@@ -5,6 +5,8 @@ import axios from 'services/axios.service';
 import { Skeleton, message } from 'antd';
 import PhoneIcon from 'assets/icons/phone.svg';
 import EmailIcon from 'assets/icons/email.svg';
+import SecondaryPhoneIcon from 'assets/icons/phone.png';
+import ZaloIcon from 'assets/icons/zalo.svg';
 
 const Footer = (): React.ReactElement => {
   const [siteInfo, setSiteInfo] = React.useState<{ phone: string; email: string }>();
@@ -56,6 +58,22 @@ const Footer = (): React.ReactElement => {
               </div>
             </div>
           )}
+        </div>
+      </div>
+      <div className="call_to_action z-10">
+        <div className="item cursor-pointer my-5">
+          <div className="icon w-12">
+            <a href="tel:+84988698989">
+              <img src={SecondaryPhoneIcon} alt="call" />
+            </a>
+          </div>
+        </div>
+        <div className="item cursor-pointer my-5">
+          <div className="icon w-12">
+            <a href="https://zalo.me/0907009389">
+              <img src={ZaloIcon} alt="zalo" />
+            </a>
+          </div>
         </div>
       </div>
     </div>
