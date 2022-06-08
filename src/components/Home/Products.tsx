@@ -8,7 +8,7 @@ const Products = (): React.ReactElement => {
 
   React.useEffect(() => {
     axios
-      .get('/product/find?limit=6')
+      .get('/product/find?limit=6&sortBy=updatedAt')
       .then((response) => {
         if (response.data.statusCode === 200) {
           setProducts(response.data.products);
