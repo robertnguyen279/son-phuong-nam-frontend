@@ -10,10 +10,10 @@ const Home = (): React.ReactElement => {
     <div className="home">
       <div className="home__container">
         <Carousel />
-        <Services />
-        <WhyUs />
         <Products />
         <Blogs />
+        <Services />
+        <WhyUs />
       </div>
     </div>
   );
