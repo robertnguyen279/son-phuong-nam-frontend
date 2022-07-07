@@ -9,8 +9,8 @@ const AboutUs = (): React.ReactElement => {
       <BreadCrumb picture={AboutUsImage} text="Giới thiệu" />
       <div className="page_container my-10">
         <div className="into font-bold text-center">
-          Epoxy Phương Nam Chuyên phân phối & thi công các sản phẩm sơn epoxy Hàn quốc, Đài Loan... chính hãng giá rẻ ở
-          HCM, Đồng Nai & các khu vực lân cận.
+          Công ty TNHH MTV XD Sơn Phương Nam Chuyên phân phối & thi công các sản phẩm sơn epoxy Hàn quốc, Đài Loan...
+          chính hãng giá rẻ ở HCM, Đồng Nai & các khu vực lân cận.
         </div>
         <div className="text py-5">
           Chúng tôi luôn cam kết mang lại cho khách hàng sản phẩm sơn epoxy chất lượng tốt nhất với giá thành rẻ nhất

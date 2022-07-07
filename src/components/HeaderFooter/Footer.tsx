@@ -5,7 +5,6 @@ import axios from 'services/axios.service';
 import { Skeleton, message } from 'antd';
 import PhoneIcon from 'assets/icons/phone.svg';
 import EmailIcon from 'assets/icons/email.svg';
-import SecondaryPhoneIcon from 'assets/icons/phone.png';
 import ZaloIcon from 'assets/icons/zalo.svg';
 
 const Footer = (): React.ReactElement => {
@@ -39,6 +38,7 @@ const Footer = (): React.ReactElement => {
     <div className="footer mt-10">
       <div className="footer__container flex sm:flex-row flex-col items-center justify-between w-full h-full md:px-10 py-5">
         <div className="logo">{renderLogo()}</div>
+        <div className="company_name text-white">&copy; 2022 Công ty TNHH MTV XD Sơn Phương Nam</div>
         <div className="contact">
           {!siteInfo ? (
             <Skeleton />
@@ -64,7 +64,12 @@ const Footer = (): React.ReactElement => {
         <div className="item cursor-pointer my-5">
           <div className="icon w-12">
             <a href="tel:+84988698989">
-              <img src={SecondaryPhoneIcon} alt="call" />
+              <div className="phone_wrapper">
+                <div className="coccoc-alo-phone coccoc-alo-green coccoc-alo-show">
+                  <div className="coccoc-alo-ph-circle-fill"></div>
+                  <div className="coccoc-alo-ph-img-circle"></div>
+                </div>
+              </div>
             </a>
           </div>
         </div>

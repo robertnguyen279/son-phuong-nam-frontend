@@ -48,12 +48,12 @@ const Product = (): React.ReactElement => {
                     <div className="name pr-1 inline font-bold">Mô tả:</div>
                     <div className="text inline">{product.description}</div>
                   </div>
-                  <Link className="buy my-5 flex items-center justify-center cursor-pointer" to="/lien-he">
+                  <a className="buy my-5 flex items-center justify-center cursor-pointer" href="tel:+84988698989">
                     <div className="img w-8 mr-2">
                       <img src={BuyIcon} alt="buy" />
                     </div>
                     <div className="text text-primary">Liên hệ mua ngay</div>
-                  </Link>
+                  </a>
                 </div>
               </div>
               <Link className="back_button my-10" to="/san-pham">
