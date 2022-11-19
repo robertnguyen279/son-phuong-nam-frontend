@@ -4,12 +4,19 @@ import RoofIcon from 'assets/icons/roof.png';
 import PaintRollerIcon from 'assets/icons/paint-roller.png';
 import CleanIcon from 'assets/icons/clean.png';
 import WaterResistanceIcon from 'assets/icons/water-resistant.png';
+import PaintBucket from 'assets/icons/paint-bucket.png';
 
 const Services = (): React.ReactElement => {
   return (
     <div className="mt-20">
       <div className="title font-bold text-lg text-center text-secondary uppercase">Dịch vụ chúng tôi cung cấp</div>
       <div className="services_wrapper flex flex-wrap items-center justify-between p-10">
+        <div className="item flex items-center justify-between p-5 my-5">
+          <div className="name uppercase">Phân phối sơn epoxy</div>
+          <div className="icon w-14">
+            <img src={PaintBucket} alt="paint-bucket" />
+          </div>
+        </div>
         <div className="item flex items-center justify-between p-5 my-5">
           <div className="name uppercase">Thi công sơn epoxy</div>
           <div className="icon w-14">
